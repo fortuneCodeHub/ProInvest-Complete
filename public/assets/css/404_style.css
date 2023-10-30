@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #222;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    top: 30%;
+}
+span {
+    display: inline-block;
+    font-size: 15rem;
+    color: transparent;
+    background-repeat: repeat;
+    /* background-color: red; */
+    background-position: center;
+    background-size: 400px;
+    -webkit-background-clip: text;
+}
+span.h-0 img {
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    left: -20%;
+}
+span.h-4,
+span.h-4-2 {
+    position: absolute;
+}
+span.h-4 {
+    left: -70%;
+    top: 10%;
+}
+span.h-4-2 {
+    right: -70%;
+    top: 10%;
+}
+.para {
+    margin-top: 300px;
+}
+.para p {
+    margin-bottom: 20px;
+    margin-left: -10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+.h-4 {
+    animation-name: h-4;
+    animation-duration: 1200ms;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+.h-4-2 {
+    animation-name: h-4;
+    animation-duration: 1200ms;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+@keyframes h-4 {
+    0% {
+        transform: rotateZ(30deg);
+    }
+    100% {
+        transform: rotateZ(50deg);
+    }
+}
+
+.svg {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.svg img {
+    width: 150px;
+    height: 100px;
+}
+.svg2 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.svg2 img {
+    width: 150px;
+    height: 150px;
+}
+.svg3 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.svg3 img {
+    width: 50px;
+    height: 50px;
+}
+.svg5 {
+    position: absolute;
+    left: 10%;
+
+}
+.svg5 img {
+    width: 70px;
+    height: 70px;
+    animation: rocket;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rocket {
+    0% {
+        transform: translate(-500px, 500px);
+    }
+    10% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(1000px, -1000px);
+    }
+}
+.svg4 {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+}
+.svg4 img {
+    height: 100px;
+    width: 100px;
+    animation: astronaut;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+@keyframes astronaut {
+    0% {
+        transform: translateX(120px);
+    }
+    25% {
+        transform: rotateZ(20deg);
+    }
+    50% {
+        transform: rotateZ(30deg);
+    }
+    100% {
+        transform: translateX(0px);
+        transform: rotateZ(40deg);
+    }
+}
+.button-bg {
+    width: 100%;
+}
+.button {
+    border-radius: 5px;
+    background-color: rgb(48, 48, 187);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: 1px solid rgb(48, 48, 187);
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+

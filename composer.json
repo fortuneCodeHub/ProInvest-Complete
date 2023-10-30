@@ -1,0 +1,15 @@
+{
+    "name": "fortune/mvc",
+    "authors": [
+        {
+            "name": "Fortune Nwohiri",
+            "email": "fortunenwohiri@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    },
+    "require": {}
+}
